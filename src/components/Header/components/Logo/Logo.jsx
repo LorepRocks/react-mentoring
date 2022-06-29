@@ -1,5 +1,6 @@
+import './styles.css';
 const Logo = () => {
-	return <img src='public/img/logo' alt='logo'></img>;
+	return <img className='logo' src='/images/logo.png' alt='logo'></img>;
 };
 
 export default Logo;

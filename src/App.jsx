@@ -1,17 +1,17 @@
 import './App.css';
-import CustomButton from './common/Button/Button';
+import Header from './components/Header/Header';
+import Courses from './components/Courses/Courses';
+import { mockedCoursesList, mockedAuthorsList } from './constants';
 
 function App() {
-	const handleClick = () => {
-		console.log('Button Clicked!');
-	};
 	return (
-		<CustomButton
-			text='Hello Human!'
-			size='large'
-			onClick={handleClick}
-			variant='outlined'
-		/>
+		<>
+			<Header />
+			<Courses
+				mockedCoursesList={mockedCoursesList}
+				mockedAuthorsList={mockedAuthorsList}
+			/>
+		</>
 	);
 }
 
